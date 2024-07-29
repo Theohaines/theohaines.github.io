@@ -97,15 +97,15 @@ async function calculateContract(){
     var contractCostOver24MIncCashbackAmount = (contractCostOver24MIncTradeinAmount - cashbackAmount.value);
     var contractCostOver24MFull = (contractCostOver24MIncCashbackAmount - ccvAmount.value);
 
-    var youSaveAmount = Number(tradeinAmount.value) + Number(cashbackAmount).value + Number(ccvAmount.value) - Number(contractUpfrontCost.value);
+    var youSaveAmount = parseFloat(tradeinAmount.value) + parseFloat(cashbackAmount).value + parseFloat(ccvAmount.value) - parseFloat(contractUpfrontCost.value);
 
-    console.log(Number(youSaveAmount))
+    console.log(parseFloat(youSaveAmount))
 
     //Advanced calculations
     var costOfHandsetInContract = simoAmount.value - contractMonthlyCost.value; 
 
     //Display cool maths stuff
-    youSaveText.textContent = "YOU SAVE: £" + Math.round(Number(youSaveAmount) * 100) / 100;    
+    youSaveText.textContent = "YOU SAVE: £" + Math.round(parseFloat(youSaveAmount) * 100) / 100;    
     costOfContractTotalText.textContent = "Total cost of contract (before reductions): £" + Math.round(contractCostOver24M * 100) / 100;
     costOfContractTotalAfterText.textContent = "Total cost of contract (after reductions): £" + Math.round(contractCostOver24MFull * 100) / 100;
     costOfHandsetInContractText.textContent = ("Cost of handset in contract: £" + Math.round(costOfHandsetInContract * 100) / 100).replace("-", "");
