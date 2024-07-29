@@ -74,6 +74,21 @@ body {
     border: solid 2px #007D97;
 }
 
+.saving-ideas{
+    width: 40%;
+    padding: 10px;
+
+    margin-top: 10px;
+
+    display: flex;
+    flex-flow: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 2px #007D97;
+}
+
 .cashback-menu {
     width: 100%;
 
@@ -168,6 +183,10 @@ button:focus {
     }
 
     .breakdown-screen {
+        width: 80%;
+    }
+
+    .saving-ideas {
         width: 80%;
     }
 }
