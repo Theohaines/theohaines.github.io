@@ -162,3 +162,13 @@ button:focus {
     border: solid 2px #007D97;
 }
 
+@media only screen and (max-width: 1500px) {
+    .calculator-screen {
+        width: 80%;
+    }
+
+    .breakdown-screen {
+        width: 80%;
+    }
+}
+

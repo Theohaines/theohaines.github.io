@@ -109,7 +109,6 @@ async function calculateContract(){
     costOfContractTotalText.textContent = "Total cost of contract (before reductions): £" + Math.round(contractCostOver24M * 100) / 100;
     costOfContractTotalAfterText.textContent = "Total cost of contract (after reductions): £" + Math.round(contractCostOver24MFull * 100) / 100;
     costOfHandsetInContractText.textContent = ("Cost of handset in contract: £" + Math.round(costOfHandsetInContract * 100) / 100).replace("-", "");
-
 }
 
 async function validateRequiredFields(){
