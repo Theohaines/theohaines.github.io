@@ -1,1 +1,0 @@
-//Node JS stuff here when server isn't static
